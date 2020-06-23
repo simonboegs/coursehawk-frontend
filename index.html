@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>CourseHawk Home</title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <div class="container">
+            <div class="jumbo">
+                <div class="jumbo-header">
+                    <h1 class="title">CourseHawk</h1>
+                    <h2 class="desc" id="desc">
+                        Find classes based on your interests
+                    </h2>
+                </div>
+                <div class="jumbo-body">
+                    <form id="schoolForm" autocomplete="off">
+                        <div class="bar">
+                            <div class="inputContainer">
+                                <input
+                                    class="schoolInput"
+                                    placeholder="Enter your school"
+                                    spellcheck="false"
+                                    autofocus
+                                    id="schoolInput"
+                                />
+                            </div>
+                            <div class="buttonContainer">
+                                <input
+                                    class="magnify-glass"
+                                    type="image"
+                                    src="images/magnify_glass.png"
+                                    width="45px"
+                                    height="45px"
+                                />
+                            </div>
+                        </div>
+                        <!-- <div class="autocomplete-option">yo whatup</div>
+                        <div class="autocomplete-option">yo whatup</div> -->
+                    </form>
+                    <div class="school-error">Please enter a valid school.</div>
+                </div>
+            </div>
+        </div>
+        <!-- <script src="script.js"></script> -->
+        <script src="homeScript.js"></script>
+    </body>
+</html>

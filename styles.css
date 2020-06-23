@@ -1,0 +1,412 @@
+html {
+    margin-left: calc(100vw - 100%);
+}
+
+.container {
+    /* border: 1px dotted green; */
+    overflow: auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    opacity: 1;
+}
+
+.container.invisible {
+    opacity: 0;
+}
+
+.container.slideInFromLeft {
+    position: relative;
+    animation: slideInFromLeft 0.4s;
+}
+
+.container.slideInFromRight {
+    position: relative;
+    animation: slideInFromRight 0.4s;
+}
+
+.container.slideOutToRight {
+    position: relative;
+    animation: slideOutToRight 0.4s;
+}
+
+.container.slideOutToLeft {
+    position: relative;
+    animation: slideOutToLeft 0.4s;
+}
+
+.jumbo {
+    margin-top: 100px;
+    /* border: 1px dotted green; */
+    text-align: center;
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 200px;
+    margin-bottom: 200px;
+}
+
+.jumbo-header {
+    /* border: 1px dotted green; */
+    margin: 10px;
+    margin-bottom: 20px;
+}
+
+.jumbo-body {
+    margin: 10px;
+    margin-top: 20px;
+}
+
+.title {
+    margin: 0px;
+    /* border: 1px dotted green; */
+    font-weight: 100;
+    font-size: 100px;
+    color: rgb(48, 52, 132);
+}
+
+.search-title {
+    margin: 10px;
+    font-weight: 100;
+    font-size: 70px;
+    color: rgb(48, 52, 132);
+}
+
+a {
+    font-size: 15px;
+    opacity: 50%;
+    text-decoration: none;
+}
+
+.desc {
+    margin: 0px;
+    font-size: 50px;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    color: lightgrey;
+    font-weight: 50;
+}
+
+.change-school-button {
+    color: lightblue;
+    font-weight: bold;
+    font-size: 45px;
+}
+
+.change-school-button:hover {
+    color: blue;
+    cursor: pointer;
+}
+
+.search-school {
+    margin: 10px;
+    font-size: 45px;
+    margin-left: auto;
+    margin-right: auto;
+    color: lightblue;
+    font-weight: bold;
+}
+
+.bar {
+    box-sizing: border-box;
+    border: 3px solid black;
+    border-radius: 10px;
+    height: 80px;
+    padding: 15px;
+}
+
+.search-bar {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border: 3px solid rgb(48, 52, 132);
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 50px;
+    border-radius: 25px;
+    padding-top: 12px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.inputContainer {
+    float: left;
+    /* width: 90%; */
+}
+
+.buttonContainer {
+    float: right;
+}
+
+.spinner {
+    display: none;
+    top: 50%;
+    left: 50%;
+    height: 30px;
+    width: 30px;
+    /* margin: -25px 0 0 -25px; */
+    border: 4px rgba(0, 0, 0, 0.25) solid;
+    border-top: 4px rgb(48, 52, 132) solid;
+    border-radius: 50%;
+    -webkit-animation: spin2 1s infinite linear;
+    animation: spin2 1s infinite linear;
+}
+
+@-webkit-keyframes spin2 {
+    from {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(359deg);
+        transform: rotate(359deg);
+    }
+}
+@keyframes spin2 {
+    from {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(359deg);
+        transform: rotate(359deg);
+        -webkit-transform: rotate(359deg);
+        transform: rotate(359deg);
+    }
+}
+
+.schoolInput {
+    width: 100%;
+    font-size: 35px;
+    box-sizing: border-box;
+    border: none;
+}
+
+.interestInput {
+    width: 100%;
+    font-size: 30px;
+    box-sizing: border-box;
+    border: none;
+    /* border: 1px dotted green; */
+}
+
+.magnify-glass {
+    height: 100%;
+}
+
+.magnify-glass:focus {
+    outline: none;
+}
+
+.arrowButton {
+    font-size: 30px;
+    color: rgb(48, 52, 132);
+    border: none;
+    background-color: white;
+    cursor: pointer;
+}
+
+.arrowButton:hover {
+    color: darkslateblue;
+}
+
+.arrowButton:focus {
+    outline: none;
+}
+
+.magnify-glass .image {
+    width: 100%;
+    height: 100%;
+}
+
+.school-error {
+    color: red;
+    margin: 10px;
+    display: none;
+}
+
+.search-error {
+    color: red;
+    text-align: center;
+    margin: 10px;
+    display: none;
+}
+
+.schoolInput:focus {
+    outline: none;
+}
+
+.interestInput:focus {
+    outline: none;
+}
+
+.search-header {
+    text-align: center;
+}
+
+::placeholder {
+    color: lightgray;
+}
+
+.tableContainer {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1000px;
+}
+
+@media (max-width: 1000px) {
+    .tableContainer {
+        width: 100%;
+    }
+}
+
+table {
+    width: 100%;
+    border-spacing: 5px;
+}
+
+tr.visible {
+    opacity: 1;
+}
+
+tr.invisible {
+    opacity: 0;
+}
+
+td.odd {
+    width: 100%;
+    background: rgb(242, 242, 242);
+    --animate-delay: 0.5s;
+    border-radius: 5px;
+}
+
+td.even {
+    width: 100%;
+    background: rgb(230, 230, 230);
+    --animate-delay: 0.5s;
+    border-radius: 5px;
+}
+
+.courseHeader {
+    padding: 20px;
+    color: rgb(48, 52, 132);
+    font-size: 30px;
+    width: 100%;
+    height: 100%;
+    text-align: left;
+    cursor: pointer;
+    border: none;
+    box-sizing: border-box;
+}
+
+.dropdownArrowDown {
+    float: right;
+    margin-top: 10px;
+    display: block;
+}
+
+.dropdownArrowUp {
+    float: right;
+    margin-top: 10px;
+    display: none;
+}
+
+.courseHeaderButton:focus {
+    outline: none;
+}
+
+.courseCode {
+    font-weight: bold;
+    padding-right: 25px;
+}
+
+.courseBody {
+    max-height: 0;
+    /* transition: max-height 0.15s; */
+    overflow: hidden;
+}
+
+.courseBody.active {
+    padding: 20px;
+    padding-top: 0px;
+    color: rgb(26, 26, 26);
+    max-height: 1000px;
+    transition: max-height 0.5s;
+}
+
+.courseDesc {
+    margin: 0px;
+    font-size: 20px;
+}
+
+.courseInfo {
+    margin: 0px;
+    margin-top: 20px;
+    color: rgb(0, 117, 178);
+}
+
+.autocomplete-option {
+    border: 1px solid lightgray;
+    border-top: none;
+    text-align: left;
+    font-size: 20px;
+    padding: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.autocomplete-option:hover {
+    background-color: rgba(0, 117, 178, 0.2);
+    cursor: pointer;
+}
+
+@keyframes slideInFromLeft {
+    from {
+        left: -500px;
+        opacity: 0;
+    }
+    to {
+        left: 0px;
+        opacity: 1;
+    }
+}
+
+@keyframes slideInFromRight {
+    from {
+        right: -500px;
+        opacity: 0;
+    }
+    to {
+        right: 0px;
+        opacity: 1;
+    }
+}
+
+@keyframes slideOutToLeft {
+    from {
+        left: 0;
+        opacity: 1;
+    }
+    to {
+        left: -500px;
+        opacity: 0;
+    }
+}
+
+@keyframes slideOutToRight {
+    from {
+        right: 0;
+        opacity: 1;
+    }
+    to {
+        right: -500px;
+        opacity: 0;
+    }
+}
+
+@media (max-width: 700px) {
+    .search-bar {
+        width: 80%;
+    }
+}

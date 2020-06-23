@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>CourseHawk Search</title>
+        <link rel="stylesheet" href="styles.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
+        />
+        <!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" /> -->
+    </head>
+    <body>
+        <div class="container">
+            <div class="search-header">
+                <h1 class="search-title">CourseHawk</h1>
+                <div>
+                    <h2 class="search-school" id="search-school">
+                        <a class="change-school-button" onclick="goBack()">&#8249;</a>
+                    </h2>
+                </div>
+                <div></div>
+            </div>
+            <div class="search-bar">
+                <form id="interestForm">
+                    <div class="inputContainer">
+                        <input
+                            class="interestInput"
+                            id="interestInput"
+                            autocomplete="off"
+                            placeholder="Search your interests"
+                        />
+                    </div>
+                    <div class="buttonContainer">
+                        <button class="arrowButton">&#8594;</button>
+                        <span class="spinner"></span>
+                    </div>
+                </form>
+            </div>
+            <div class="search-error">No courses found.</div>
+            <div class="tableContainer">
+                <table class="courseTable" id="courseTable"></table>
+                <!-- <table class="courseTable">
+                    <tr>
+                        <td>
+                            <div class="courseHeader">
+                                <span class="courseCode">ENG 102</span>
+                                Shakespearean Drama
+                            </div>
+                            <div class="courseBody">
+                                <p class="courseDesc">
+                                    Introductory study of several genres of
+                                    English literature, emphasizing both
+                                    analysis of particular works and the range
+                                    of forms and styles in English prose and
+                                    poetry. Frequent writing assignments will be
+                                    made.
+                                </p>
+                                <p class="courseInfo">
+                                    <strong>Subject: </strong>English
+                                    <strong>Units: </strong>4
+                                    <strong>Prerequisite: </strong>ENL 003 or
+                                    UWP 001 or UWP 001V or UWP 001Y; Or
+                                    equivalent.
+                                </p>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>whatup</td>
+                    </tr>
+                </table> -->
+            </div>
+        </div>
+        <!-- <script src="script.js"></script> -->
+        <script src="searchScript.js"></script>
+    </body>
+</html>
