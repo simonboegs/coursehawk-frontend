@@ -27,7 +27,8 @@ function get(url) {
 
 function fullUrl(url) {
     return new Promise((resolve, reject) => {
-        resolve("http://127.0.0.1:5000" + url);
+        //resolve("http://127.0.0.1:5000" + url);
+        resolve("https://coursehawk.herokuapp.com" + url);
     });
 }
 
