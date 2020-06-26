@@ -34,14 +34,25 @@ html {
 }
 
 .jumbo {
-    margin-top: 100px;
     /* border: 1px dotted green; */
     text-align: center;
     width: 800px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 200px;
-    margin-bottom: 200px;
+    margin-top: 0;
+}
+
+.jumbo-search {
+    /* border: 1px dotted green; */
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+}
+
+.jumbo-search.slideUp {
+    position: relative;
+    animation: slideUp 0.4s;
 }
 
 .jumbo-header {
@@ -106,12 +117,22 @@ a {
     font-weight: bold;
 }
 
-.bar {
+/* .bar {
     box-sizing: border-box;
     border: 3px solid black;
     border-radius: 10px;
     height: 80px;
     padding: 15px;
+} */
+
+.bar {
+    box-sizing: border-box;
+    border: 3px solid rgb(48, 52, 132);
+    height: 80px;
+    padding: 15px;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-radius: 25px;
 }
 
 .search-bar {
@@ -402,6 +423,15 @@ td.even {
     to {
         right: -500px;
         opacity: 0;
+    }
+}
+
+@keyframes slideUp {
+    from {
+        top: 0;
+    }
+    to {
+        top: -500px;
     }
 }
 

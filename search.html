@@ -13,32 +13,35 @@
     </head>
     <body>
         <div class="container">
-            <div class="search-header">
-                <h1 class="search-title">CourseHawk</h1>
-                <div>
-                    <h2 class="search-school" id="search-school">
-                        <a class="change-school-button" onclick="goBack()">&#8249;</a>
-                    </h2>
+            <div class="jumbo-search" id="jumbo">
+                <div class="search-header">
+                    <h1 class="search-title">CourseHawk</h1>
+                    <div>
+                        <h2 class="search-school" id="search-school">
+                            <a class="change-school-button" onclick="goBack()">&#8249;</a>
+                        </h2>
+                    </div>
+                    <div></div>
                 </div>
-                <div></div>
+                <div class="search-bar">
+                    <form id="interestForm">
+                        <div class="inputContainer">
+                            <input
+                                class="interestInput"
+                                id="interestInput"
+                                autocomplete="off"
+                                placeholder="Search your interests"
+                            />
+                        </div>
+                        <div class="buttonContainer">
+                            <button class="arrowButton">&#8594;</button>
+                            <span class="spinner"></span>
+                        </div>
+                    </form>
+                </div>
+                <div class="search-error">No courses found.</div>
             </div>
-            <div class="search-bar">
-                <form id="interestForm">
-                    <div class="inputContainer">
-                        <input
-                            class="interestInput"
-                            id="interestInput"
-                            autocomplete="off"
-                            placeholder="Search your interests"
-                        />
-                    </div>
-                    <div class="buttonContainer">
-                        <button class="arrowButton">&#8594;</button>
-                        <span class="spinner"></span>
-                    </div>
-                </form>
-            </div>
-            <div class="search-error">No courses found.</div>
+            <div class="filters"></div>
             <div class="tableContainer">
                 <table class="courseTable" id="courseTable"></table>
                 <!-- <table class="courseTable">

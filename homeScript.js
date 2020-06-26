@@ -1,3 +1,8 @@
+//position jumbo in center
+var jumbo = document.getElementById("jumbo");
+var jumboHeight = jumbo.getBoundingClientRect().height;
+jumbo.style.marginTop = ((window.innerHeight - jumboHeight) / 2).toString() + "px";
+
 var schools = ["UC BERKELEY", "UC DAVIS", "UC IRVINE", "UC LA", "UC SANTA CRUZ", "UC MERCED"];
 var errorDiv = document.querySelector(".school-error");
 
@@ -17,8 +22,11 @@ form.addEventListener("submit", (e) => {
         errorDiv.style.display = "block";
         return;
     }
+    exitPage(school);
+});
+
+function exitPage(school) {
     school = school.toLowerCase().replace(/ /g, "-");
-    console.log(school);
     container.classList.add("slideOutToRight");
     container.addEventListener(
         "animationend",
@@ -29,7 +37,7 @@ form.addEventListener("submit", (e) => {
         },
         false
     );
-});
+}
 
 const schoolInput = document.getElementById("schoolInput");
 
@@ -40,7 +48,7 @@ schoolInput.addEventListener("input", async (e) => {
     clearSuggestions();
     if (input.length === 0) return;
     let suggestions = getSuggestions(input);
-    console.log("suggestions: " + suggestions);
+    // console.log("suggestions: " + suggestions);
     for (var i = 0; i < suggestions.length; i++) {
         let newDiv = document.createElement("div");
         newDiv.innerHTML = suggestions[i];
@@ -48,6 +56,7 @@ schoolInput.addEventListener("input", async (e) => {
         form.appendChild(newDiv);
         newDiv.addEventListener("click", (e) => {
             schoolInput.value = newDiv.innerHTML;
+            exitPage(schoolInput.value);
             clearSuggestions();
         });
     }
@@ -65,6 +74,7 @@ function clearSuggestions() {
 function getSuggestions(input) {
     var suggestions = [];
     for (var i = 0; i < schools.length; i++) {
+        var arr = schools[i].split(" ");
         if (schools[i].substring(0, input.length).toUpperCase() == input.toUpperCase()) {
             suggestions.push(schools[i]);
         }
