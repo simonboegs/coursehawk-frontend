@@ -74,8 +74,12 @@ function clearSuggestions() {
 function getSuggestions(input) {
     var suggestions = [];
     for (var i = 0; i < schools.length; i++) {
-        var arr = schools[i].split(" ");
+        var schoolSplit = schools[i].split(" ");
         if (schools[i].substring(0, input.length).toUpperCase() == input.toUpperCase()) {
+            suggestions.push(schools[i]);
+            continue;
+        }
+        if (schoolSplit[1].substring(0, input.length).toUpperCase() == input.toUpperCase()) {
             suggestions.push(schools[i]);
         }
     }
