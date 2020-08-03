@@ -66,6 +66,7 @@ input {
     border: none;
     border-bottom: 2px solid gray;
     font-size: 40px;
+    font-family: "Montserrat", sans-serif;
 }
 
 input:focus {
