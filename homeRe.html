@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>CourseHawk Home</title>
+        <link rel="stylesheet" href="stylesRe.css" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <div class="container">
+            <div class="top">
+                <span class="logotext">Coursehawk</span><img src="images/logo.png" id="logo" />
+            </div>
+            <div class="main">
+                <h1 id="jumbotext">Find college courses based on your interests.</h1>
+                <form>
+                    <div class="inputDiv" id="schoolInputDiv">
+                        <label class="inputLabel" for="schoolInput">SCHOOL</label>
+                        <input id="schoolInput" autocomplete="off" />
+                    </div>
+                    <div class="inputDiv" id="interestInputDiv">
+                        <label class="inputLabel" for="interestInput"
+                            >INTERESTS (python, coffee, anything)</label
+                        >
+                        <input id="interestInput" autocomplete="off" />
+                    </div>
+                    <button type="submit" class="submitButton">SEARCH</button>
+                </form>
+                <!-- <form>
+                    <div class="inputDiv">
+                        <label for="schoolInput">SCHOOL</label>
+                        <input id="schoolInput" autocomplete="off" />
+                    </div>
+                    <div class="inputDiv">
+                        <label for="interestInput">ENTER YOUR INTERESTS</label>
+                        <input id="interestInput" autocomplete="off" />
+                    </div>
+                    <button type="submit">Search</button>
+                </form> -->
+            </div>
+            <div class="mural">
+                <img src="images/art_notop.png" id="art" />
+            </div>
+        </div>
+        <script src="homeScriptRe.js"></script>
+    </body>
+</html>

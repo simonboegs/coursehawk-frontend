@@ -1,0 +1,298 @@
+@media only screen and (min-width: 1511px) {
+    .container {
+        width: 1500px;
+        overflow: auto;
+    }
+    .top {
+        height: 80px;
+    }
+    .logotext {
+        right: 250px;
+        font-size: 50px;
+    }
+    #logo {
+        right: 100px;
+        width: 100px;
+    }
+    .main {
+        height: 744px;
+    }
+    #jumbotext {
+        font-size: 75px;
+        margin-top: 100px;
+        margin-left: 100px;
+    }
+    .mural {
+        height: 744px;
+    }
+    form {
+        margin-top: 70px;
+        margin-left: 175px;
+        width: 400px;
+    }
+    .inputDiv {
+        margin-bottom: 40px;
+    }
+    .inputLabel {
+        font-size: 16px;
+    }
+    input {
+        font-size: 40px;
+        border-bottom: 2px solid gray;
+    }
+    table {
+        border-spacing: 20px;
+    }
+    td {
+        padding: 20px;
+    }
+    .courseHeader {
+        font-size: 30px;
+    }
+    p {
+        font-size: 16px;
+    }
+    .courseInfo {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 1510px) {
+    .container {
+        width: 1200px;
+    }
+    .top {
+        height: 55px;
+    }
+    .logotext {
+        right: 170px;
+        font-size: 40px;
+    }
+    #logo {
+        right: 50px;
+        width: 80px;
+    }
+    .main {
+        height: 600px;
+    }
+    #jumbotext {
+        font-size: 60px;
+        margin-top: 75px;
+        margin-left: 80px;
+    }
+    .mural {
+        height: 600px;
+    }
+    form {
+        margin-top: 70px;
+        margin-left: 150px;
+        width: 325px;
+    }
+    .inputDiv {
+        margin-bottom: 30px;
+    }
+    .inputLabel {
+        font-size: 14px;
+    }
+    input {
+        font-size: 30px;
+        border-bottom: 2px solid gray;
+    }
+    table {
+        border-spacing: 15px;
+    }
+    td {
+        padding: 17px;
+    }
+    .courseHeader {
+        font-size: 25px;
+    }
+    p {
+        font-size: 14px;
+    }
+    .courseInfo {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 1210px) {
+    .container {
+        width: 900px;
+    }
+    .top {
+        height: 40px;
+    }
+    .logotext {
+        right: 120px;
+        font-size: 30px;
+    }
+    #logo {
+        right: 30px;
+        width: 60px;
+    }
+    .main {
+        height: 465px;
+    }
+    #jumbotext {
+        font-size: 45px;
+        margin-top: 50px;
+        margin-left: 60px;
+    }
+    .mural {
+        height: 465px;
+    }
+    form {
+        margin-top: 70px;
+        margin-left: 125px;
+        width: 250px;
+    }
+    .inputDiv {
+        margin-bottom: 20px;
+    }
+    .inputLabel {
+        font-size: 12px;
+    }
+    input {
+        font-size: 20px;
+        border-bottom: 1px solid gray;
+    }
+    table {
+        border-spacing: 10px;
+    }
+    td {
+        padding: 14px;
+    }
+    .courseHeader {
+        font-size: 20px;
+    }
+    p {
+        font-size: 12px;
+    }
+    .courseInfo {
+        font-size: 12px;
+    }
+}
+
+.container {
+    /* border: 1px dotted green; */
+    /* height: 97vh; */
+    height: auto;
+    overflow: auto;
+    margin: auto;
+    /* margin-left: 250px;
+    margin-right: 250px; */
+    font-family: "Montserrat", sans-serif;
+    color: #1a2c47;
+}
+.top {
+    /* border: 1px dotted green; */
+    text-align: right;
+    padding-right: 70px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    position: relative;
+    background: linear-gradient(90deg, rgba(222, 216, 216, 0.2) 60%, #ffffff 40%);
+    /* height: 9vh; */
+}
+.logotext {
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    /* left: 63%; */
+}
+#logo {
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.main {
+    float: left;
+    width: 60%;
+    background-color: rgba(222, 216, 216, 0.2);
+}
+
+#jumbotext {
+    padding: 0px;
+    width: 75%;
+    /* border: 1px dotted green; */
+}
+
+.mural {
+    float: right;
+    width: 40%;
+    text-align: right;
+    /* height: auto; */
+}
+#art {
+    /* width: 740px; */
+    height: 100%;
+    /* border: solid; */
+    position: relative;
+    float: right;
+}
+
+#schoolInputDiv {
+}
+
+#interestInputDiv {
+}
+
+input {
+    border: none;
+    border-bottom: 2px solid gray;
+    font-family: "Montserrat", sans-serif;
+    background: none;
+    width: 100%;
+}
+
+input:focus {
+    outline: none;
+    border-bottom: 3px solid #50b9ff;
+}
+
+.submitButton {
+    float: right;
+    border: none;
+    font-size: 15px;
+    background: none;
+    font-family: "Montserrat", sans-serif;
+    color: #1a2c47;
+}
+
+.submitButton:hover {
+    outline: 1px solid #1a2c47;
+}
+
+/* RESULTS */
+
+.mainResults {
+    float: left;
+    width: 60%;
+    background-color: rgba(222, 216, 216, 0.2);
+    height: auto;
+}
+
+table {
+    width: 90%;
+    margin: auto;
+}
+
+td {
+    background-color: rgba(217, 217, 226, 0.7);
+    border-radius: 25px;
+}
+
+.courseHeader {
+    color: #1a2c47;
+}
+
+.courseInfo {
+    color: #3f92ca;
+}
+
+p {
+    margin-bottom: 0;
+}
